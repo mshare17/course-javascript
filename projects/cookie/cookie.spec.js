@@ -126,6 +126,7 @@ describe('ДЗ 7.2 - Cookie editor', () => {
 
       deleteButton.click();
       cookies = getCookies();
+      console.log('cookies deleted', cookies);
       expect(Object.keys(cookies).length).toBe(1);
       expect(listTable.children.length).toBe(1);
 
