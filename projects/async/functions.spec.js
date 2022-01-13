@@ -27,6 +27,8 @@ describe('ДЗ 5.2 - Асинхронность и работа с сетью', 
     it('должна возвращать Promise', () => {
       const result = loadAndSortTowns();
 
+      console.log('result', result);
+
       expect(result).toBeInstanceOf(Promise);
     });
 
